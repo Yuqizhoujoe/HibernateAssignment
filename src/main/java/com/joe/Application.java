@@ -147,5 +147,8 @@ public class Application {
         }
     }
 
+    public void exit(){
+        sessionFactory.close();
+    }
 
 }
