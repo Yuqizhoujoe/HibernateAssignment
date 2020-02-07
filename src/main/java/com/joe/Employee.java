@@ -18,14 +18,14 @@ public class Employee {
     @GeneratedValue (strategy = GenerationType.SEQUENCE, generator = "empid_generator")
     @SequenceGenerator(name="empid_generator", allocationSize = 1, sequenceName = "empid_seq")
     @Column(name="employeeId")
-    private long emplyeeId;
+    private long employeeId;
 
-    public long getEmplyeeId() {
-        return emplyeeId;
+    public long getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmplyeeId(long emplyeeId){
-        this.emplyeeId = emplyeeId;
+    public void setEmployeeId(long emplyeeId){
+        this.employeeId = employeeId;
     }
 
     @Column(name="employName")

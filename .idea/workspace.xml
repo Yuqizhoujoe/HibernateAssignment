@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fb57d4-59d8-46f5-9546-6c0fab6dec4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/joe/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/joe/EmployeeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joe/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joe/InstructorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joe/InstructorDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JdbcCRUDOperations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JdbcCRUDOperations.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/joe/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joe/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joe/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joe/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joe/EmployeeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joe/EmployeeApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/joe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joe/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/joe/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/joe/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/joe/EmployeeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/joe/EmployeeApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/joe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/joe/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
@@ -90,6 +91,7 @@
       <workItem from="1581037739660" duration="57000" />
       <workItem from="1581037933523" duration="103000" />
       <workItem from="1581038987537" duration="642000" />
+      <workItem from="1581040474473" duration="3062000" />
     </task>
     <servers />
   </component>
@@ -113,22 +115,22 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="483" y="233" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963@0.0.1504.963" timestamp="1580964427859" />
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1581037688442">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1581043543611">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1581037688442" />
-    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1581037688441">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1581043543611" />
+    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1581043543611">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1581037688441" />
-    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1581037688441">
+    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1581043543611" />
+    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1581043543611">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1581037688441" />
-    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1581037688441">
+    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1581043543611" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1581043543611">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1581037688441" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1581043543611" />
     <state x="461" y="311" key="com.intellij.ide.util.TipDialog" timestamp="1581037756080">
       <screen x="0" y="0" width="1504" height="963" />
     </state>

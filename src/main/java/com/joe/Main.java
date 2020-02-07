@@ -4,6 +4,7 @@ package com.joe;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String args[]) {
+        // Student
         Application app = new Application();
 
         Scanner in = new Scanner(System.in);
@@ -74,7 +76,7 @@ public class Main {
             }
         } while (res <= 5 && res >= 1);
 
-
+        // Employee
         EmployeeApplication empApp = new EmployeeApplication();
         // add second employee
         /*Employee employee = new Employee();
@@ -98,43 +100,54 @@ public class Main {
         empApp.create(employee3);*/
 
         // store procedure find salary between min and max
+        System.out.println("store procedure find salary between min and max");
         BigDecimal min = BigDecimal.valueOf(0);
         BigDecimal max = BigDecimal.valueOf(25000);
         empApp.between(min, max);
 
         // store procedure find the employee by employeeId
+        System.out.println("store procedure find the employee by employeeId");
         int id = 2;
         empApp.findEmployeeById(id);
 
+        // display all the records
+        System.out.println("display all the records");
+        empApp.showAllEmployees();
 
-//        empApp.showAllEmployees();
-
-        // insert student
-        /*app.insertStudent("Yuqi Zhou", "CS", "Fordham");
-        app.insertStudent( "Edward", "MBA", "USC");
-        app.insertStudent( "Stacy", "EE", "UCLA");
-        app.insertStudent( "John", "Finance", "UTD");
-        app.insertStudent( "Kuang", "Accounting", "China");*/
-
-        // insert
-//        app.insertStudent("DamnJoeJoe", "DATA", "NYU");
-
-        // get the student by studentID
-//        app.get(7);
-
-        // display all the data
-        // app.getAllStudents();
+        // delete
+        System.out.println("delete employee with id 1");
+        Employee employee = empApp.find(1);
+        empApp.delete(employee);
 
         // update
-        /*Student student = app.find(7);
-        student.setName("Kevin");
-        System.out.println(app.update(student));
-        app.get(7);*/
+        System.out.println("update employee with id 2");
+        Employee employee2 = empApp.find(2);
+        employee2.setEmploySalary(20);
+        empApp.update(employee);
 
-        //
-        /*Student student = app.find(8);
-        app.delete(student);
-        app.getAllStudents();*/
+        // Instructor
+        System.out.println("Instructor and Instructor Detail");
+        InstructorApplication iapp = new InstructorApplication();
+        // create Instructor and InstructorDetails
+        /*iapp.createInstructor("yang", "YYYYYYQQQQQ", "yangs@itlize.com",
+                "http://www.youtube.com", "Swiming");*/
+        iapp.getInstructorDetails(1);
+        System.out.println("Update Instructor with id 1");
+        // find the Instructor
+        Instructor instructor = iapp.findInstructor(1);
+        // set the Instructor
+        instructor.setFirstName("Celestial");
+        instructor.setLastName("Dragons");
+        instructor.setEmail("TonyTonyChopper@gmail.com");
+        // get the Instructor Details
+        InstructorDetails instructorDetails = instructor.getInstructorDetail();
+        // set the InstructorDetails
+        instructorDetails.setYoutubeChannel("OnePieceYoutubeChannel");
+        instructorDetails.setHobby("Anime");
+        System.out.println(iapp.update(instructor));
+
+        // get the Instructor Details
+        iapp.getInstructorDetails(1);
     }
 
 }

@@ -51,7 +51,7 @@ public class EmployeeApplication {
             Query query = session.createQuery("select s from Student s where id = :id");
             query.setParameter("id", id);
             employee = (Employee) query.uniqueResult();
-            System.out.println("Id: " + employee.getEmplyeeId());
+            System.out.println("Id: " + employee.getEmployeeId());
             System.out.println("Name: " + employee.getEmployName());
             System.out.println("Salary: " + employee.getEmploySalary());
             transaction.commit();
@@ -135,7 +135,7 @@ public class EmployeeApplication {
             employees = (List) query.getResultList();
             for (Iterator<Employee> iter = employees.iterator(); iter.hasNext();) {
                 Employee employee = iter.next();
-                System.out.println("Id: " + employee.getEmplyeeId());
+                System.out.println("Id: " + employee.getEmployeeId());
                 System.out.println("Name: " + employee.getEmployName());
                 System.out.println("Salary: " + employee.getEmploySalary());
             }
@@ -163,7 +163,7 @@ public class EmployeeApplication {
             employees = storedProcedureQuery.getResultList();
             for (Iterator iter = employees.iterator(); iter.hasNext();){
                 Employee employee = (Employee) iter.next();
-                System.out.println("Id: " + employee.getEmplyeeId());
+                System.out.println("Id: " + employee.getEmployeeId());
                 System.out.println("Name: " + employee.getEmployName());
                 System.out.println("Salary: " + employee.getEmploySalary());
             }
@@ -189,8 +189,8 @@ public class EmployeeApplication {
             storedProcedureQuery.registerStoredProcedureParameter("id", Integer.class, ParameterMode.IN);
             storedProcedureQuery.setParameter("id", id);
             employee = (Employee) storedProcedureQuery.getSingleResult();
-            System.out.println("Id: " + employee.getEmplyeeId());
-            System.out.println("Name: " + employee.getEmployName());
+            System.out.println("Id: " + employee.getEmployeeId());
+            System.out.println("Name: " + employee.getEmployeeId());
             System.out.println("Salary: " + employee.getEmploySalary());
             transaction.commit();
         } catch (Exception e) {

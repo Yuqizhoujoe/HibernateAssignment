@@ -13,5 +13,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="com.joe.Student" />
         <mapping class="com.joe.Employee" />
+        <mapping class="com.joe.Instructor" />
+        <mapping class="com.joe.InstructorDetails" />
     </session-factory>
 </hibernate-configuration>
