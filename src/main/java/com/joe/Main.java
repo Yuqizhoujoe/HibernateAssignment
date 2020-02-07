@@ -29,33 +29,32 @@ public class Main {
             res = in.nextInt();
             if (res == 1) {
                 System.out.println("Enter the Name");
-                in.nextLine();
-                String name = in.nextLine();
+                String name = in.next();
                 System.out.println("Enter the Major");
-                String major = in.nextLine();
+                String major = in.next();
                 System.out.println("Enter the School");
-                String school = in.nextLine();
+                String school = in.next();
                 app.insertStudent(name, major, school);
             } else if (res == 2) {
                 System.out.println("Enter the student ID: ");
                 long id = in.nextLong();
                 System.out.println("Which one you want to change? Name(n), Major(m), or School(s)? ");
-                String option = in.nextLine();
+                String option = in.next();
                 if (option == "name" || option == "Name" || option == "n" || option == "NAME") {
                     System.out.println("Enter the New Name: ");
-                    String newName = in.nextLine();
+                    String newName = in.next();
                     Student student = app.find(id);
                     student.setName(newName);
                     app.update(student);
                 } else if (option == "major" || option == "Major" || option == "m" || option == "MAJOR") {
                     System.out.println("Enter the New Major: ");
-                    String newMajor = in.nextLine();
+                    String newMajor = in.next();
                     Student student = app.find(id);
                     student.setName(newMajor);
                     app.update(student);
                 } else if (option == "school" || option == "School" || option == "s" || option == "SCHOOL") {
                     System.out.println("Enter the New School: ");
-                    String newSchool = in.nextLine();
+                    String newSchool = in.next();
                     Student student = app.find(id);
                     student.setName(newSchool);
                     app.update(student);
@@ -74,7 +73,7 @@ public class Main {
             } else if (res == 6) {
                 app.exit();
             }
-        } while (res <= 5 && res >= 1);
+        } while (res <= 6 && res >= 1);
 
         // Employee
         EmployeeApplication empApp = new EmployeeApplication();
