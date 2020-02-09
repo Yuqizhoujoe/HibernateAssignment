@@ -1,6 +1,8 @@
 package com.joe;
 
 
+import java.util.Set;
+
 public class MainForEmployee {
 
     public static void main(String args[]) {
@@ -86,14 +88,27 @@ public class MainForEmployee {
         da.create(ninja);
         da.displayAllDept();
 
-        // update Employee
+        // update
+        // add new employee into the department ninja
         Department addEmployee = da.find(4);
         Employee jiraiya = new Employee();
         jiraiya.setEmployName("Jiraiya");
         jiraiya.setEmploySalary(80);
         addEmployee.addEmployee(jiraiya);
         da.update(addEmployee);
-        da.displayAllDept();
+
+        // change the salary
+        // get the department pirate
+        Department department1 = da.find(1);
+        // create a set to store employees
+        Set<Employee> employees1 = department1.getEmployees();
+        // get the employee Luffy id 2 and change the salary
+        for (Employee employee : employees1) {
+            if (employee.getEmployeeId() == 2) {
+                employee.setEmploySalary(1000);
+            }
+        }
+        da.update(department1);
 
         // delete employee
         ea.getById(4);

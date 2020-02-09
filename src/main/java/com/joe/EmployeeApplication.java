@@ -24,9 +24,7 @@ public class EmployeeApplication {
         try {
             session = sessionFactory.openSession();
             transaction = session.beginTransaction();
-            Query query = session.createQuery("select e from Employee e where id = :id", Employee.class);
-            query.setParameter("id", id);
-            employee = (Employee) query.uniqueResult();
+            employee = session.get(Employee.class, id);
             transaction.commit();
         } catch (HibernateError e) {
             if(transaction != null) {
@@ -137,7 +135,8 @@ public class EmployeeApplication {
                 System.out.println("Id: " + employee.getEmployeeId());
                 System.out.println("Name: " + employee.getEmployName());
                 System.out.println("Salary: " + employee.getEmploySalary());
-                System.out.println("Department " + employee.getDeptment().getDepartment());
+                System.out.println("Department Id: " + employee.getDeptment().getdeptId());
+                System.out.println("Department Name: " + employee.getDeptment().getDepartment());
             }
         } catch (Exception e) {
             if (transaction != null) {
