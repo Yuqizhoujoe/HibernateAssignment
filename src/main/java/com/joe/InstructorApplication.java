@@ -1,12 +1,10 @@
 package com.joe;
 
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import org.hibernate.query.Query;
-import javax.persistence.criteria.CriteriaBuilder;
 
 public class InstructorApplication {
 
